@@ -1,0 +1,25 @@
+<script type="text/x-red" data-template-name="node-red-contrib-test-node">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> <span>Name</span></label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('node-red-contrib-test-node',{
+        category: 'test',
+        defaults: {
+            name: { value: ""}
+        },
+        inputs: 1,
+        outputs: 1,
+
+        icon: "light.svg",
+        color: "#A6BBCF",
+        label: "test",
+        paletteLabel: "testNode"
+    });
+</script>
+
+<script type="text/x-red" data-help-name="node-red-contrib-test-node">
+</script>
